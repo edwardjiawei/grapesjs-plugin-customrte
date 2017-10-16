@@ -6,7 +6,7 @@ var env = process.env.WEBPACK_ENV;
 var plugins = [];
 
 if(env !== 'dev'){
-  plugins.push(new webpack.optimize.UglifyJsPlugin({ compressor: { warnings: false } }));
+  //plugins.push(new webpack.optimize.UglifyJsPlugin({ compressor: { warnings: false } }));
   plugins.push(new webpack.BannerPlugin(pkg.name + ' - ' + pkg.version));
 }
 
